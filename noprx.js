@@ -77,4 +77,10 @@ class MiningManager {
                 await new Promise(resolve => setTimeout(resolve, 3000));
             }
         } catch (error) {
-            this.log(`Lỗi chung: ${error.message}`, 
+            this.log(`Lỗi chung: ${error.message}`, 'red');
+        }
+    }
+}
+
+const manager = new MiningManager();
+manager.main();
